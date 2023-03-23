@@ -9,7 +9,7 @@ import '../../domain/repositories/person_repository.dart';
 import '../models/person_model.dart';
 
 class PersonRepositoryImpl extends PersonRepository {
-  final PersonRemoteDataSorce remoteDataSorce;
+  final PersonRemoteDataSource remoteDataSorce;
   final PersonLocalDataSource localDataSource;
   final NetworkInfo networkInfo;
 

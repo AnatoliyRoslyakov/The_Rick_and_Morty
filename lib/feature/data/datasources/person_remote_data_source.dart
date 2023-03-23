@@ -6,7 +6,7 @@ import 'package:the_rick_and_morty/core/error/excaption.dart';
 
 import 'package:the_rick_and_morty/feature/data/models/person_model.dart';
 
-abstract class PersonRemoteDataSorce {
+abstract class PersonRemoteDataSource {
   /// Calls the https://rickandmortyapi.com/api/character/?page=1 endpoint.
   ///
   /// Throws a [ServerExcaption] for all error codes.
@@ -18,7 +18,7 @@ abstract class PersonRemoteDataSorce {
   Future<List<PersonModel>> searchPerson(String query);
 }
 
-class PersonRemoteDataSourceImpl implements PersonRemoteDataSorce {
+class PersonRemoteDataSourceImpl implements PersonRemoteDataSource {
   final http.Client client;
 
   PersonRemoteDataSourceImpl({required this.client});
