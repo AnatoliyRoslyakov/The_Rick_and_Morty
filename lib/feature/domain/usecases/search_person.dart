@@ -16,6 +16,7 @@ class SearchPerson extends UseCase<List<PersonEntity>, SearchPersonParams> {
     required this.personRepositoty,
   });
 
+  @override
   Future<Either<Failure, List<PersonEntity>>> call(
       SearchPersonParams params) async {
     return await personRepositoty.searchPerson(params.query);
