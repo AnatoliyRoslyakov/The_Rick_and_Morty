@@ -1,6 +1,9 @@
-# The_Rick_and_Morty
+The_Rick_and_Morty
 
-Implemented the Dependency Injection principle. Package: get_it
+<h1 align="center">The Rick and Morty</h1>
+
+<h3>The application is based on the course on Udemy</h3>
+
 
 cubit and presentation layer
 
