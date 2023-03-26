@@ -56,6 +56,9 @@ dependencies:
   # Dependency Injection
   get_it: ^7.2.0
 
+  # Navigator
+  go_router: ^6.5.0
+
 
   
 

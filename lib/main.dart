@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_rick_and_morty/common/app_colors.dart';
+import 'package:the_rick_and_morty/feature/domain/entities/person_entity.dart';
 import 'package:the_rick_and_morty/feature/presentation/bloc/person_list_cubit/person_list_cubit.dart';
 import 'package:the_rick_and_morty/feature/presentation/bloc/search_bloc.dart/search.bloc.dart';
 import 'package:the_rick_and_morty/locator_service.dart' as di;
+import 'package:go_router/go_router.dart';
 
 import 'feature/presentation/pages/home_page.dart';
+import 'feature/presentation/pages/person_detail_page.dart';
 import 'locator_service.dart';
 
 void main() async {
