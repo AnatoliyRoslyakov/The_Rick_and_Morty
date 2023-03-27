@@ -11,7 +11,7 @@ abstract class PersonSearchState extends Equatable {
   List<Object?> get props => [];
 }
 
-class PersonEmpty extends PersonSearchState {}
+class PersonSearchEmpty extends PersonSearchState {}
 
 class PersonSearchLoading extends PersonSearchState {}
 
@@ -27,7 +27,7 @@ class PersonSearchLoaded extends PersonSearchState {
 class PersonSearchError extends PersonSearchState {
   final String message;
 
-  PersonSearchError({required this.message});
+  const PersonSearchError({required this.message});
 
   @override
   List<Object?> get props => [message];

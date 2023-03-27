@@ -12,7 +12,7 @@ class PersonCacheImage extends StatelessWidget {
   Widget _imageWidget(ImageProvider imageProvider) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
         image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
       ),

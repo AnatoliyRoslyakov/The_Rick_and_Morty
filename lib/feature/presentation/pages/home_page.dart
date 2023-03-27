@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import '../widgets/custom_search_delegate.dart';
 import '../widgets/persons_list_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +16,9 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              showSearch(context: context, delegate: CustomSearchDelegate());
+            },
             icon: Icon(Icons.search),
             color: Colors.white,
           )
