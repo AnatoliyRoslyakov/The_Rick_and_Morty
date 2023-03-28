@@ -26,34 +26,34 @@ The_Rick_and_Morty
 
 <h2 align="center">USED PACKAGES</h2>
 
-  # Functional programming thingies
-  dartz: ^0.10.1
+  ### Functional programming
+  * [dartz](https://pub.dev/packages/dartz) 
 
-  # Value equality
-  equatable: ^2.0.5
+  ### Value equality
+  * [equatable](https://pub.dev/packages/equatable)
   
-  # Local cache
-  shared_preferences: ^2.0.18
-  cached_network_image: ^3.2.3
+  ### Local cache
+  * [shared_preferences](https://pub.dev/packages/shared_preferences)
+  * [cached_network_image](https://pub.dev/packages/cached_network_image)
 
-  # Remote API
-  http: ^0.13.5
-  internet_connection_checker: ^1.0.0+1
+  ### Remote API
+  * [http](https://pub.dev/packages/http)
+  * [internet_connection_checker](https://pub.dev/packages/internet_connection_checker)
 
-  # Bloc / Cubit for state management
-  flutter_bloc: ^8.1.2
+  ### Bloc / Cubit for state management
+  * [flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
-  # Dependency Injection
-  get_it: ^7.2.0
+  ### Dependency Injection
+  * [get_it](https://pub.dev/packages/get_it)
 
-  # Navigator
-  go_router: ^6.5.0
+  ### Navigator
+  * [go_router](https://pub.dev/packages/go_router)
 
 
 <h3 align="center"><img src="https://pngimg.com/uploads/rick_morty/rick_morty_PNG35.png" width="260" /></h3>
 
 
-<h6  align="center">The application is based on the course on Udemy</h6>
+
 
 
 
