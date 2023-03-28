@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:the_rick_and_morty/common/app_colors.dart';
 import 'package:the_rick_and_morty/feature/domain/entities/person_entity.dart';
 import 'package:the_rick_and_morty/feature/presentation/pages/person_detail_page.dart';
 import 'package:the_rick_and_morty/feature/presentation/widgets/person_cache_image_widget.dart';
 
 class PersonCard extends StatelessWidget {
-  PersonCard({super.key, required this.person});
+  const PersonCard({super.key, required this.person});
 
-  PersonEntity person;
+  final PersonEntity person;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -26,12 +26,10 @@ class PersonCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(8)),
         child: Row(
           children: [
-            Container(
-              child: PersonCacheImage(
-                width: 174,
-                height: 174,
-                imageUrl: person.image,
-              ),
+            PersonCacheImage(
+              width: 174,
+              height: 174,
+              imageUrl: person.image,
             ),
             const SizedBox(
               width: 16,

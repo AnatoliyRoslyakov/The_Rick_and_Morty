@@ -13,13 +13,13 @@ class PersonDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Character'),
+        title: const Text('Character'),
       ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(children: [
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
             Text(
               person.name,
               style: const TextStyle(
@@ -30,12 +30,10 @@ class PersonDetailPage extends StatelessWidget {
             const SizedBox(
               height: 12,
             ),
-            Container(
-              child: PersonCacheImage(
-                width: 260,
-                height: 260,
-                imageUrl: person.image,
-              ),
+            PersonCacheImage(
+              width: 260,
+              height: 260,
+              imageUrl: person.image,
             ),
             const SizedBox(
               height: 16,

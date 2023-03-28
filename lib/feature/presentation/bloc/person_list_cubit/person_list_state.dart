@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:equatable/equatable.dart';
 
 import 'package:the_rick_and_morty/feature/domain/entities/person_entity.dart';
@@ -19,7 +18,8 @@ class PersonLoading extends PersonState {
   final List<PersonEntity> oldPersonsList;
   final bool isFirstFetch;
 
-  PersonLoading({required this.oldPersonsList, this.isFirstFetch = false});
+  const PersonLoading(
+      {required this.oldPersonsList, this.isFirstFetch = false});
 
   @override
   List<Object?> get props => [oldPersonsList];
@@ -27,7 +27,7 @@ class PersonLoading extends PersonState {
 
 class PersonLoaded extends PersonState {
   final List<PersonEntity> personsList;
-  PersonLoaded({required this.personsList});
+  const PersonLoaded({required this.personsList});
 
   @override
   List<Object?> get props => [personsList];
@@ -35,7 +35,7 @@ class PersonLoaded extends PersonState {
 
 class PersonError extends PersonState {
   final String message;
-  PersonError({required this.message});
+  const PersonError({required this.message});
 
   @override
   List<Object?> get props => [message];

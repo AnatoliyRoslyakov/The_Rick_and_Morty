@@ -1,8 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_rick_and_morty/feature/domain/entities/person_entity.dart';
 import 'package:the_rick_and_morty/feature/presentation/bloc/person_list_cubit/person_list_cubit.dart';
@@ -12,6 +9,8 @@ import 'person_card_widget.dart';
 
 class PersonsList extends StatelessWidget {
   final scrollController = ScrollController();
+  final int page = -1;
+
   PersonsList({super.key});
 
   void setupScrollController(BuildContext context) {
@@ -48,11 +47,11 @@ class PersonsList extends StatelessWidget {
             if (index < persons.length) {
               return PersonCard(person: persons[index]);
             } else {
-              Timer(Duration(milliseconds: 50), () {
+              Timer(const Duration(milliseconds: 50), () {
                 scrollController
                     .jumpTo(scrollController.position.maxScrollExtent);
               });
-              _loadingIndicator();
+              return _loadingIndicator();
             }
           },
           separatorBuilder: (context, index) {

@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first, void_checks
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -16,6 +15,7 @@ abstract class PersonLocalDataSource {
   Future<void> personToCache(List<PersonModel> persons);
 }
 
+// ignore: constant_identifier_names
 const CACHED_PERSONS_LIST = 'CACHED_PERSONS_LIST';
 
 class PersonLocalDataSourceImpl implements PersonLocalDataSource {
@@ -42,7 +42,9 @@ class PersonLocalDataSourceImpl implements PersonLocalDataSource {
         persons.map((person) => json.encode(person.toJson())).toList();
 
     sharedPreferences.setStringList(CACHED_PERSONS_LIST, jsonPersonsList);
+    // ignore: avoid_print
     print('Persons to write Cache: ${jsonPersonsList.length}');
+    // ignore: void_checks
     return Future.value(jsonPersonsList);
   }
 }

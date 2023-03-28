@@ -40,8 +40,6 @@ class CustomSearchDelegate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    print('Inside custom search delegate and search query is $query');
-
     BlocProvider.of<PersonSearchBloc>(context, listen: false)
         .add(SearchPersons(personQuery: query));
 

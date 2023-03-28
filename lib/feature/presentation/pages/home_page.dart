@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import '../widgets/custom_search_delegate.dart';
 import '../widgets/persons_list_widget.dart';
 
@@ -12,14 +9,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Characters'),
+        title: const Text('Characters'),
         centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {
               showSearch(context: context, delegate: CustomSearchDelegate());
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             color: Colors.white,
           )
         ],

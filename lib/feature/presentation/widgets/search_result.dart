@@ -32,8 +32,6 @@ class SearchResult extends StatelessWidget {
               width: double.infinity,
               child: PersonCacheImage(
                 imageUrl: personResult.image,
-                height: 300,
-                width: double.infinity,
               ),
             ),
             Padding(

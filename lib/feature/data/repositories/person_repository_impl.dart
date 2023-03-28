@@ -18,6 +18,7 @@ class PersonRepositoryImpl extends PersonRepository {
     required this.localDataSource,
     required this.networkInfo,
   });
+
   @override
   Future<Either<Failure, List<PersonEntity>>> getAllPersons(int page) async {
     return await _getPersons(() {
