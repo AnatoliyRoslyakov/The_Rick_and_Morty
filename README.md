@@ -1,8 +1,11 @@
-The_Rick_and_Morty
-
 <h1 align="center"><img src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif" width="60" />The Rick and Morty<img src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif" width="60" /></h1>
 
 <h4 align="center">This project is designed to practice building an application using clean architecture principles</h4>
+
+<h5 align="center"><img src="https://user-images.githubusercontent.com/91376345/228227372-cfdf8aca-1f92-4a57-9f0b-6a00f76ac7d4.png" width="600"/></h5>
+
+
+
 
 
 
